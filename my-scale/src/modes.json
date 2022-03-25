@@ -1,0 +1,157 @@
+{
+    "data": [
+        {
+            "title": "Phrygian",
+            "chords": [
+                "Amin",
+                "Bbmaj",
+                "Cmaj",
+                "Dmin",
+                "E7b5",
+                "Fmaj",
+                "Gmin"
+            ],
+            "harmony": "Stays manly on the I chord and bring a little bit of II and the VII",
+            "image": "https://cdn.mos.cms.futurecdn.net/T3AQYkPsQyGJWTmNN9WAAY-1200-80.jpg",
+            "chart": "https://www.scales-chords.com/music-scales/guitar-phrygian-A-n.jpg",
+            "description": "The phrygian mode is a mode of the minor scale obtained by half step lowering the 2th degree, or you can see it as a major scale that starts from the 3th degreethe interaction between the root and the lowered 2th degree gives a strong dark,creepy,evil,exotic,tense and dramatic sound. It's often used in metal and hip-hop",
+            "heard": "You heard this mode in Set The Control For The Heart of The Sun by Pink Floyd, Whenever I May Roam by Metallica, Symphony of Destruction by Megadeth and Get ur freak on by Missy Elliot",
+            "usage": "Try to emphasize on the 2th degree by doing some trills or fast half step vibrato in between the root",
+            "ytlinksID": [
+                "ZdK-RZQIuUM",
+                "VAKbXWi2-bI",
+                "QSrjysKpDi0"
+            ]
+        },
+        {
+            "title": "Lydian",
+            "chords": [
+                "Gmaj",
+                "Amaj",
+                "Bmi",
+                "C#m7b5",
+                "Dmaj",
+                "Emin",
+                "Fmin"
+            ],
+            "harmony": "the lydian vamp is made by going back and forth the I chord and the II chord and sometimes the VII stays in the 1 chord most of the time it's an unstable mode, it means that more you are away from the I chord the more your simply hear a different key as a tonal center because it wants to resolve but we want to prevent that",
+            "image": "https://www.ondamusicale.it/wp-content/uploads/2020/12/joe-satriani-steve-vai1.jpg",
+            "chart": "https://www.scales-chords.com/music-scales/guitar-dorian-A-n.jpg",
+            "description": "The lydian mode is a mode of the major scale obtained by half step raising the 4th degree. You can also see it as a Major scale that starts from the 4th degree. It feels spacy, sedative, disconnected, floaty, futuristic, sci-fi t's often used in only part of the composition because of Lydian potent distinctive sound which can sound overwhelming if used excessively",
+            "heard": "You probably heard it in many films theme: Yoda theme in Star Wars, Back from the future main theme and the E.T. flying moment or in the opening riff of dancing days by Led Zeppelin",
+            "usage": "highlight the 4# notes by building lines that use half step tension notes. You can also think of this scale as a major scale that starts from the 4th (so E major in this case). you can use the shapes you might already know from the major scale but remember to end on your root note and emphasize the 4#",
+            "ytlinksID": [
+                "-kdKmDyYtIw",
+                "SDxj4pBcYfU",
+                "KGMgMAK1zMY",
+                "Srj8PELz3XM",
+                "uNq-tOWh_XM"
+            ]
+        },
+        {
+            "title": "Dorian",
+            "chords": [
+                "Amin",
+                "Bmin",
+                "Cmaj",
+                "Dmaj",
+                "Emin",
+                "F#m7b5",
+                "Gmaj"
+            ],
+            "harmony": "I suggest you to extend the chords using the 7th note for each chord to highlight even more the feeling of dorian. The main Dorian vamp is established going between the I and the IV chord. If you try other chords you might move the tonal center and you dont want that. But don't worry, half of Pink Floyd discography is written with these 2 chords",
+            "image": "https://www.rollingstone.it/wp-content/uploads/2017/08/carlos-santana.jpg",
+            "chart": "https://www.scales-chords.com/music-scales/guitar-lydian-A-n.jpg",
+            "description": "The dorian mode is a mode of the minor scale obtained by half step raising the 6th degree. You can alternative see it as a major scale that starts from the 2th degree. It feels melancholic and mystical but still optimistic and uplifting. It's not as bright as major but it's not as sad as minor",
+            "heard": "You heard this mode in Mad World by Tears for Fears, Eleanor Rigsby by The Beatles, Thriller by Michael Jackson and So What by Miles Davis",
+            "usage": "The raised 6 from the natural minor (turning the flat 6 into a natural 6) softness this sound compared to a natural minor. You really want to highlight that particular note to have the dorian feeling. You can use the shapes you might already know from your minor scale and even the most common minor pentatonic scale and licks but remember to look carefully for that 6 so you can use it to spice it up with the dorian flavour",
+            "ytlinksID": [
+                "2EUOYON3eZg",
+                "QOZYjxy4JuI",
+                "MrxJ3CUSXqw",
+                "_DS7Xlr4m4E",
+                "e2EGQD37W_g",
+                "HiWhPNtDuQ0"
+            ]
+        },
+
+        {
+            "title": "Ionian (Major)",
+            "chords": [
+                "Amaj",
+                "Bmin",
+                "C#min",
+                "Dmaj",
+                "Emaj",
+                "F#min",
+                "G#7b5"
+            ],
+            "harmony": "The I,V,VI,IV is the most common chord progression ever, especially in the last 20 years. If you want to write a song and play safe this is the way to go. It's very versatile because every chord brings you a new layer of emotional intensity. It's great for story telling. The VI, V, IV, V it's sad but uplifting. It makes you feel like you are in a journey because it never resolve to the tonic. The I,IV,VI,V progression starts with 2 major and uplifting chords that create a sense of lost when it reach the VI and finally resolve to the V giving a sense of closure ",
+            "image": "https://i.ytimg.com/vi/kVWVxKVTwDo/maxresdefault.jpg",
+            "chart": "https://www.scales-chords.com/music-scales/guitar-major-A-n.jpg",
+            "description": "The dorian mode is a mode of the minor scale obtained by half step raising the 6th degree. You can alternative see it as a major scale that starts from the 2th degree. It feels melancholic and mystical but still optimistic and uplifting. It's not as bright as major but it's not as sad as minor",
+            "heard": "You heard The I,V,VI,IV progression in Don't stop Believing by Journey or Take Me Home Country Rhodes by John Denver. The VI, V, IV, V in Marry the night by Lady Gaga or Rihanna S & M. The I,IV,VI,V it's used in song such as Summer of 69 by Bryan Adams or SkyScraper by Demi Lovato",
+            "usage": "When soloing over a Major chord progression you want to sounds optimistic and bright and you can archive this especially by playing the 3th note of the chord that is playing underneath in that moment. Doing this you are going to enhance the quality of the chord. You can also play in a more scalar way and resolve on the root note this will also prevent you to sound dissonant by not staying on the 2th or the 4th of the chord too much",
+            "ytlinksID": [
+                "h8_WCYSDmYk",
+                "xeapvZ4PzNA",
+                "B9afDZV8dn0",
+                "L8JBqEVTnqY",
+                "Xdx4fVxceuQ"
+                
+            ]
+        },
+        {
+            "title": "Mixolydian",
+            "chords": [
+                "Amin",
+                "Bmin",
+                "Cmaj",
+                "Dmaj",
+                "Emin",
+                "F#m7b5",
+                "Gmaj"
+            ],
+            "harmony": "I suggest you to extend the chords using the 7th note for each chord to highlight even more the feeling of dorian. The main Dorian vamp is established going between the I and the IV chord",
+            "image": "https://www.rollingstone.it/wp-content/uploads/2017/08/carlos-santana.jpg",
+            "chart": "https://www.scales-chords.com/music-scales/guitar-mixolydian-A-n.jpg",
+            "description": "The dorian mode is a mode of the minor scale obtained by half step raising the 6th degree. You can alternative see it as a major scale that starts from the 2th degree. It feels melancholic and mystical but still optimistic and uplifting. It's not as bright as major but it's not as sad as minor",
+            "heard": "You heard this mode in Mad World by Tears for Fears, Eleanor Rigsby by The Beatles, Thriller by Michael Jackson and So What by Miles Davis",
+            "usage": "The raised 6 from the natural minor (turning the flat 6 into a natural 6) softness this sound compared to a natural minor. You really want to highlight that particular note to have the dorian feeling. You can use the shapes you might already know from your minor scale and minor pentatonic scale but remember to look carefully for that 6",
+            "ytlinksID": [
+                "2EUOYON3eZg",
+                "QOZYjxy4JuI",
+                "MrxJ3CUSXqw",
+                "_DS7Xlr4m4E",
+                "e2EGQD37W_g",
+                "HiWhPNtDuQ0"
+            ]
+        },
+        {
+            "title": "Aeolian (Minor)",
+            "chords": [
+                "Amin",
+                "Bmin",
+                "Cmaj",
+                "Dmaj",
+                "Emin",
+                "F#m7b5",
+                "Gmaj"
+            ],
+            "harmony": "I suggest you to extend the chords using the 7th note for each chord to highlight even more the feeling of Aeolian (Minor). The main Aeolian (Minor) vamp is established going between the I and the IV chord",
+            "image": "https://www.rollingstone.it/wp-content/uploads/2017/08/carlos-santana.jpg",
+            "chart": "https://www.scales-chords.com/music-scales/guitar-natural_minor-A-n.jpg",
+            "description": "The Aeolian (Minor) mode is a mode of the minor scale obtained by half step raising the 6th degree. You can alternative see it as a major scale that starts from the 2th degree. It feels melancholic and mystical but still optimistic and uplifting. It's not as bright as major but it's not as sad as minor",
+            "heard": "You heard this mode in Mad World by Tears for Fears, Eleanor Rigsby by The Beatles, Thriller by Michael Jackson and So What by Miles Davis",
+            "usage": "The raised 6 from the natural minor (turning the flat 6 into a natural 6) softness this sound compared to a natural minor. You really want to highlight that particular note to have the dorian feeling. You can use the shapes you might already know from your minor scale and minor pentatonic scale but remember to look carefully for that 6",
+            "ytlinksID": [
+                "2EUOYON3eZg",
+                "QOZYjxy4JuI",
+                "MrxJ3CUSXqw",
+                "_DS7Xlr4m4E",
+                "e2EGQD37W_g",
+                "HiWhPNtDuQ0"
+            ]
+        }
+    ]
+}
