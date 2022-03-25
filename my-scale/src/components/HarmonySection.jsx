@@ -4,8 +4,11 @@ const HarmonySection = () =>{
     return(
     <div>
        <ol>
-           <li>list of chords</li>
+           <li>ordered list of chords</li>
        </ol>
+     
+     harmony description
+
     </div>
  )}
  
