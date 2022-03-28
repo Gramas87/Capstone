@@ -1,6 +1,7 @@
-const DescriptionSection = () =>(
+const DescriptionSection = ({title, description}) =>(
     <div>
-        description of the mode
+        {title} <br />
+        {description}
     </div>
  )
  

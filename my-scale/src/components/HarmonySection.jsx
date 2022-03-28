@@ -1,15 +1,17 @@
 import Chord from "./Chord";
 
-const HarmonySection = () =>{
+const HarmonySection = ({chords,harmony}) =>{
     return(
     <div>
-       <ol>
-           <li>ordered list of chords</li>
+       <ol >
+          {chords.map(chord => chord.includes("m") ? <li style={{ listStyleType: "lower-roman" }} ><Chord chord={chord}   /></li> 
+          : <li style={{ listStyleType: "upper-roman" }} ><Chord chord={chord}   /></li> )  }
        </ol>
      
-     harmony description
+    {harmony}
 
     </div>
  )}
  
  export default HarmonySection
+

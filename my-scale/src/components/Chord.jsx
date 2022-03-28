@@ -1,8 +1,9 @@
-const Chord = () =>{
-    return(
-    <div>
-        
-    </div>
- )}
- 
- export default Chord
+const Chord = ({chord}) => {
+  return (
+    <>
+      {chord}
+    </>
+  );
+};
+
+export default Chord;

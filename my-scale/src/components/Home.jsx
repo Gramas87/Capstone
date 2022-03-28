@@ -1,13 +1,29 @@
 import { Row, Col, Container, DropdownButton, InputGroup, Dropdown } from "react-bootstrap";
+import {useState} from "react"
 import BackingTracksSection from "./BackingTracksSection";
 import ChartSection from "./ChartSection";
-import ControlCarousel from "./ControlCarousel";
 import DescriptionSection from "./DescriptionSection";
 import HarmonySection from "./HarmonySection";
 import ImgGuitarist from "./ImgGuitarist";
 import InstructionSection from "./InstructionSection";
+import scales from "../modes.json";
 
-const Home = () => (
+
+const Ionian = scales.data.find( ({ title }) => title === 'Ionian (Major)');
+const Lydian = scales.data.find( ({ title }) => title === 'Lydian');
+const Phrygian = scales.data.find( ({ title }) => title === 'Phrygian');
+const Mixolydian = scales.data.find( ({ title }) => title === 'Mixolydian');
+const Dorian = scales.data.find( ({ title }) => title === 'Dorian');
+const Aeolian = scales.data.find( ({ title }) => title === 'Aeolian (Minor)');
+
+
+const Home = () => {
+  const [mode, setMode] = useState(Ionian);
+  
+  
+  
+  
+  return(
   <>
     <Container className="my-5">
       <Row>
@@ -19,41 +35,43 @@ const Home = () => (
         <Col className="d-flex justify-content-center" md={3}>
         <ImgGuitarist/>
         </Col>
-        <div class="input-group mb-3">
-  <label class="input-group-text" for="inputGroupSelect01">Mode</label>
-  <select class="form-select" id="inputGroupSelect01">
-    <option selected>Choose your mode to explore</option>
-    <option value="1">Ionian (major)</option>
-    <option value="2">Dorian</option>
-    <option value="3">Phrygian</option>
-    <option value="4">Lydian</option>
-    <option value="5">Mixolydian</option>
-    <option value="6">Aeolian (minor)</option>
-  </select>
-</div>
-
       </Row>
+      <Dropdown>
+  <Dropdown.Toggle variant="success" id="dropdown-basic">
+    Select your mode to explore
+  </Dropdown.Toggle>
+
+  <Dropdown.Menu>
+  <Dropdown.Item onClick={() => setMode(Ionian)}>Ionian (Major)</Dropdown.Item>
+    <Dropdown.Item onClick={() => setMode(Dorian)}>Dorian</Dropdown.Item>
+    <Dropdown.Item onClick={() => setMode(Phrygian)}>Phrygian</Dropdown.Item>
+    <Dropdown.Item onClick={() => setMode(Lydian)}>Lydian</Dropdown.Item>
+    <Dropdown.Item onClick={() => setMode(Mixolydian)}>Mixolydian</Dropdown.Item>
+    <Dropdown.Item onClick={() => setMode(Aeolian)}>Aeolian (Minor)</Dropdown.Item>
+  </Dropdown.Menu>
+</Dropdown>
+
     </Container>
     <Container className="mt-5">
       <Row>
         <Col md={3}>
-          <DescriptionSection />
+          <DescriptionSection title={mode.title} description={mode.description} />
         </Col>
         <Col md={3}>
-          <HarmonySection />
+          <HarmonySection chords={mode.chords} harmony={mode.harmony}/>
         </Col>
         <Col md={3}>
-          <InstructionSection />
+          <InstructionSection usage={mode.usage} />
         </Col>
         <Col md={3}>
-          <ControlCarousel />
+          <BackingTracksSection ytlinksID={mode.ytlinksID} />
         </Col>
       </Row>
       <div className="justify-content-center">
-        <ChartSection />
+        <ChartSection chart={mode.chart} />
       </div>
     </Container>
-  </>
-);
+  </>)
+;}
 
 export default Home;
