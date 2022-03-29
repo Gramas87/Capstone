@@ -1,6 +1,6 @@
-const InstructionSection = () =>(
+const InstructionSection = ({usage}) =>(
     <div>
-        how to enhance the sound of the mode
+        {usage}
     </div>
  )
  

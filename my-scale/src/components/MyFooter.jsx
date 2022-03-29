@@ -1,9 +1,18 @@
 import {Col, Row, Container} from "react-bootstrap"
 
 const YoutubeLink = () =>(
-    <div>
-       footer 
-    </div>
+  
+    <Container className="mt-5">
+      <div className="d-flex justify-content-evenly">
+       <div>
+          created by date blabla
+       </div>
+       <div>
+          PlacedHolders links vari
+       </div>
+      </div>
+      
+    </Container>
  )
  
  export default YoutubeLink

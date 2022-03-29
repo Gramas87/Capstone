@@ -1,7 +1,9 @@
-const Chord = ({chord}) => {
+const Chord = ({chord, index}) => {
+  
   return (
     <>
-      {chord}
+      {chord} 
+      
     </>
   );
 };

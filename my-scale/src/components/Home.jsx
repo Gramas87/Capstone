@@ -55,7 +55,7 @@ const Home = () => {
     <Container className="mt-5">
       <Row>
         <Col md={3}>
-          <DescriptionSection title={mode.title} description={mode.description} />
+          <DescriptionSection title={mode.title} heard={mode.heard} description={mode.description} />
         </Col>
         <Col md={3}>
           <HarmonySection chords={mode.chords} harmony={mode.harmony}/>

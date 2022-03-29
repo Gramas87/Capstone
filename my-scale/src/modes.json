@@ -4,11 +4,11 @@
             "title": "Phrygian",
             "chords": [
                 "Amin",
-                "Bb",
-                "C",
+                "Bbmaj",
+                "Cmaj",
                 "Dmin",
                 "E7b5",
-                "F",
+                "Fmaj",
                 "Gmin"
             ],
             "harmony": "Stays manly on the i chord and bring a little bit of II and the vii",
@@ -26,11 +26,11 @@
         {
             "title": "Lydian",
             "chords": [
-                "G",
-                "A",
+                "Gmaj",
+                "Amaj",
                 "Bmin",
                 "C#m7b5",
-                "D",
+                "Dmaj",
                 "Emin",
                 "Fmin"
             ],
@@ -53,11 +53,11 @@
             "chords": [
                 "Amin",
                 "Bmin",
-                "C",
-                "D",
+                "Cmaj",
+                "Dmaj",
                 "Emin",
                 "F#m7b5",
-                "G"
+                "Gmaj"
             ],
             "harmony": "I suggest you to extend the chords using the 7th note for each chord to highlight even more the feeling of dorian. The main Dorian vamp is established going between the I and the IV chord. If you try other chords you might move the tonal center and you dont want that. But don't worry, half of Pink Floyd discography is written with these 2 chords",
             "image": "https://www.rollingstone.it/wp-content/uploads/2017/08/carlos-santana.jpg",
@@ -78,11 +78,11 @@
         {
             "title": "Ionian (Major)",
             "chords": [
-                "A",
+                "Amaj",
                 "Bmin",
                 "C#min",
-                "D",
-                "E",
+                "Dmaj",
+                "Emaj",
                 "F#min",
                 "G#7b5"
             ],
@@ -104,13 +104,13 @@
         {
             "title": "Mixolydian",
             "chords": [
-                "A",
+                "Amaj",
                 "Bmin",
                 "C#7b5",
-                "D",
+                "Dmaj",
                 "Emin",
                 "F#min",
-                "G"
+                "Gmaj"
             ],
             "harmony": "I suggest you to extend the chords using the 7th note for each chord to highlight even more the feeling of dorian. The main Dorian vamp is established going between the I and the IV chord",
             "image": "https://www.rollingstone.it/wp-content/uploads/2017/08/carlos-santana.jpg",
@@ -130,11 +130,11 @@
             "chords": [
                 "Amin",
                 "B7b5",
-                "C",
+                "Cmaj",
                 "Dmin",
                 "Emin",
-                "F",
-                "G"
+                "Fmaj",
+                "Gmaj"
             ],
             "harmony": "I suggest you to extend the chords using the 7th note for each chord to highlight even more the feeling of Aeolian (Minor). The main Aeolian (Minor) vamp is established going between the I and the IV chord",
             "image": "https://www.rollingstone.it/wp-content/uploads/2017/08/carlos-santana.jpg",
@@ -143,12 +143,12 @@
             "heard": "You heard this mode in Mad World by Tears for Fears, Eleanor Rigsby by The Beatles, Thriller by Michael Jackson and So What by Miles Davis",
             "usage": "The raised 6 from the natural minor (turning the flat 6 into a natural 6) softness this sound compared to a natural minor. You really want to highlight that particular note to have the dorian feeling. You can use the shapes you might already know from your minor scale and minor pentatonic scale but remember to look carefully for that 6",
             "ytlinksID": [
-                "2EUOYON3eZg",
-                "QOZYjxy4JuI",
-                "MrxJ3CUSXqw",
-                "_DS7Xlr4m4E",
-                "e2EGQD37W_g",
-                "HiWhPNtDuQ0"
+                "einl3CzAp1E",
+                "UeimvmRZ3jg",
+                "qDC_md6GadA",
+                "7gp3gcG2_hA",
+                "PCP21WUSRK4&ab",
+                "rn07fBYqo9A"
             ]
         }
     ]
