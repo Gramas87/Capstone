@@ -1,4 +1,4 @@
-const Chord = ({chord, index}) => {
+const Chord = ({chord}) => {
   
   return (
     <>
