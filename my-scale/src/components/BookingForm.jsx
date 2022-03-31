@@ -7,17 +7,15 @@ const BookingForm = () => {
     phone: "",
     topic: "",
     datetime: "",
-    guitar: true,
+    guitar: false,
   });
 
-  const handleChange = (property, value) =>{
-
+  const handleChange = (property, value) => {
     SetBookingData({
-        ...bookingData,
-        [property]: value,
-    })
-
-  }
+      ...bookingData,
+      [property]: value,
+    });
+  };
 
   const submitReservation = async (e) => {
     e.preventDefault();
@@ -54,7 +52,9 @@ const BookingForm = () => {
             value={bookingData.name}
             type="text"
             placeholder="enter name"
-            onChange={(e) => {handleChange("name", e.target.value)}}
+            onChange={(e) => {
+              handleChange("name", e.target.value);
+            }}
           />
         </Form.Group>
         <Form.Group>
@@ -64,7 +64,9 @@ const BookingForm = () => {
             value={bookingData.phone}
             type="number"
             placeholder="enter phone number"
-            onChange={(e) => {handleChange("phone", e.target.value)}}
+            onChange={(e) => {
+              handleChange("phone", e.target.value);
+            }}
           />
         </Form.Group>
         <Form.Group>
@@ -73,8 +75,9 @@ const BookingForm = () => {
             as="select"
             id="topic"
             value={bookingData.topic}
-            onChange={(e) => {handleChange("topic", e.target.value)}}
-            
+            onChange={(e) => {
+              handleChange("topic", e.target.value);
+            }}
           >
             <option>Music Theory</option>
             <option>Technique</option>
@@ -89,20 +92,23 @@ const BookingForm = () => {
             id="dateTime"
             value={bookingData.datetime}
             type="datetime-local"
-            onChange={(e) => {handleChange("datetime", e.target.value)}}
+            onChange={(e) => {
+              handleChange("datetime", e.target.value);
+            }}
           />
         </Form.Group>
         <Form.Check
-        id="guitar"
-        checked={bookingData.guitar}
-        type="checkbox"
-        label="Are you bringing your own guitar?"
+          id="guitar"
+          checked={bookingData.guitar}
+          type="checkbox"
+          label="I bring my own guitar"
+          onChange={(e) => {
+              handleChange("guitar", e.target.checked)  
+          }}
         />
-          <Button
-                        variant="info"
-                        type="submit">
-                        Book the lesson!
-                    </Button>
+        <Button variant="info" type="submit">
+          Book the lesson!
+        </Button>
       </Form>
     </>
   );
