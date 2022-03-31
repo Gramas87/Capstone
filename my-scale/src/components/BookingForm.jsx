@@ -101,7 +101,7 @@ const BookingForm = () => {
           id="guitar"
           checked={bookingData.guitar}
           type="checkbox"
-          label="I bring my own guitar"
+          label="I can't bring my own guitar!"
           onChange={(e) => {
               handleChange("guitar", e.target.checked)  
           }}
