@@ -1,7 +1,7 @@
 import BookingForm from "./BookingForm"
 
 const BookLesson = () =>(
-    <div>
+    <div >
         <BookingForm />
     </div>
  )
