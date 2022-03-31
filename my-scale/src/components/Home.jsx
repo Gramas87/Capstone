@@ -17,6 +17,8 @@ const Dorian = scales.data.find( ({ title }) => title === 'Dorian');
 const Aeolian = scales.data.find( ({ title }) => title === 'Aeolian (Minor)');
 
 
+
+
 const Home = () => {
   const [mode, setMode] = useState(Ionian);
   
