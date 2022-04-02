@@ -1,40 +1,52 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Form, Button } from "react-bootstrap";
-import {useLocation, useParams} from "react-router-dom"
+import { useLocation, useParams } from "react-router-dom";
 
 // BookLesson viene renderizzato sia da /book sia da /book/:id
 // tu puoi capire se sei in create on in edit mode dalla presenza di :id
-// 
-
+//
 
 const BookingForm = () => {
+  const [postMode, setPostMode] = useState(false);
+  const [editMode, setEditMode] = useState(false);
 
-const [postMode, setPostMode] = useState(false)
-const [editMode, setEditMode] = useState(false)
+  const [bookingId, setBookingId] = useState(null);
 
-const [bookingId, setBookingId] = useState(null)
+  const params = useParams();
 
-const location = useLocation()
-const params = useParams()
+  const PostModeOn = () => {
+    setPostMode(true);
+    setEditMode(false);
+  };
 
-const PostModeOn = () => {
-  setPostMode(true)
-  setEditMode(false)
-}
+  const EditModeOn = () => {
+    setEditMode(true);
+    setPostMode(false);
+  };
+  useEffect(() => {
+    const id = params.id;
+    setBookingId(id);
 
-const EditModeOn = () => {
-  setEditMode(true) 
-  setPostMode(false)
-}
-useEffect(() => {
-  const id = params.id
-  setBookingId(id)
-  id ? EditModeOn() : PostModeOn()
-  if(id) {
-    // fare una fetch singola ai dettagli dell'evento con quell'id
-    // una volta che hai i dettagli setti lo stato del form
-  }
-},[params])
+    id ? EditModeOn() : PostModeOn();
+    if (id) {
+      const FetchLesson = async () => {
+        try {
+          const response = await fetch(`http://localhost:3000/booking/${id}`);
+
+          if (response.ok) {
+            const data = await response.json();
+            SetBookingData(data);
+          } else {
+            alert("something went wrong");
+          }
+        } catch (error) {
+          console.log(error);
+        }
+      };
+      console.log(bookingData);
+      FetchLesson();
+    }
+  }, [params]);
 
   const [bookingData, SetBookingData] = useState({
     name: "",
@@ -76,16 +88,54 @@ useEffect(() => {
       console.log(error);
     }
   };
+
+  const editLesson = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch(
+        `http://localhost:3000/booking/${bookingId}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(bookingData),
+        }
+      );
+
+      if (response.ok) {
+        SetBookingData(bookingData);
+        console.log(bookingData);
+        setTimeout(() => {
+          window.location.reload();
+        }, 100);
+      } else {
+        alert("something went wrong");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const handleSubmit = (e) => {
+    editMode ? editLesson(e) : submitLesson(e);
+  };
+
   return (
     <>
-      <Form onSubmit={submitLesson}>
+       {editMode ? (<h4>
+        Reschedule the lesson nr. {bookingId}
+       </h4>) : <h4> Compile this form and book the lesson </h4> }
+
+      <Form onSubmit={handleSubmit}>
         <Form.Group>
           <Form.Label>Name</Form.Label>
           <Form.Control
             id="name"
             value={bookingData.name}
             type="text"
-            required={true}  
+            required={true}
             placeholder="enter name"
             onChange={(e) => {
               handleChange("name", e.target.value);
@@ -113,7 +163,7 @@ useEffect(() => {
             required={true}
             value={bookingData.topic}
             onChange={(e) => {
-              handleChange("topic", e.currentOption.value);
+              handleChange("topic", e.target.value);
             }}
           >
             <option>Music Theory</option>
@@ -140,14 +190,16 @@ useEffect(() => {
           checked={bookingData.guitar}
           type="checkbox"
           label="I can't bring my own guitar!"
-          
           onChange={(e) => {
-              handleChange("guitar", e.target.checked)  
+            handleChange("guitar", e.target.checked);
           }}
         />
-        <Button type="submit">
-          Book the lesson!
-        </Button>
+
+        {editMode ? (
+          <Button type="submit">Confirm your reschedule</Button>
+        ) : (
+          <Button type="submit">Book the lesson!</Button>
+        )}
       </Form>
     </>
   );

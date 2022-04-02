@@ -5,7 +5,7 @@ import { format, parseISO } from 'date-fns'
 const convertDate = (dateString) => format(parseISO(dateString), 'yyyy-MMM-dd | HH:mm')
 const SingleLesson = ({ lesson }) => {
     
-  const deletelesson =  () =>{
+  const deletelesson = () =>{
       
      fetch(`http://localhost:3000/booking/${lesson.id}`,{
         method: 'DELETE', 
@@ -35,10 +35,10 @@ const SingleLesson = ({ lesson }) => {
                 : <p>{lesson.name} will bring his own guitar</p> )
             }
           </Card.Text>
-         <Link to={`/book/${lesson.id}`}><Button variant="primary">reschedule your lesson</Button>{" "} </Link>
+         <Link to={`/book/${lesson.id}`}><Button variant="primary">reschedule this lesson</Button>{" "} </Link>
           
             {" "}
-            <Button onClick={deletelesson} variant="primary">delete your lesson</Button>{" "}
+            <Button onClick={deletelesson} variant="primary">cancel your lesson</Button>{" "}
           
         </Card.Body>
       </Card>
