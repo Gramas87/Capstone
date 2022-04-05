@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 import { Form, Button } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 
-
-
 const BookingForm = () => {
   const [postMode, setPostMode] = useState(false);
   const [editMode, setEditMode] = useState(false);
@@ -29,7 +27,9 @@ const BookingForm = () => {
     if (id) {
       const FetchLesson = async () => {
         try {
-          const response = await fetch(`https://json-server-demoday.herokuapp.com/booking/${id}`);
+          const response = await fetch(
+            `https://json-server-demoday.herokuapp.com/booking/${id}`
+          );
 
           if (response.ok) {
             const data = await response.json();
@@ -65,13 +65,16 @@ const BookingForm = () => {
     e.preventDefault();
 
     try {
-      let response = await fetch("`https://json-server-demoday.herokuapp.com/booking", {
-        method: "POST",
-        body: JSON.stringify(bookingData),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      let response = await fetch(
+        "`https://json-server-demoday.herokuapp.com/booking",
+        {
+          method: "POST",
+          body: JSON.stringify(bookingData),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       if (response.ok) {
         alert("Lesson booked!");
@@ -122,9 +125,11 @@ const BookingForm = () => {
 
   return (
     <>
-       {editMode ? (<h4>
-        Reschedule lesson nr. {bookingId}
-       </h4>) : <h4> Compile this form and book the lesson </h4> }
+      {editMode ? (
+        <h4>Reschedule lesson nr. {bookingId}</h4>
+      ) : (
+        <h4> Compile this form and book the lesson </h4>
+      )}
 
       <Form onSubmit={handleSubmit}>
         <Form.Group>
@@ -133,7 +138,6 @@ const BookingForm = () => {
             id="name"
             value={bookingData.name}
             type="text"
-            
             required={true}
             placeholder="enter name"
             onChange={(e) => {
@@ -195,9 +199,13 @@ const BookingForm = () => {
         />
 
         {editMode ? (
-          <Button  className="btn-book" type="submit">Confirm your reschedule</Button>
+          <Button className="btn-book" type="submit">
+            Confirm your reschedule
+          </Button>
         ) : (
-          <Button className="btn-book" type="submit">Book the lesson!</Button>
+          <Button className="btn-book" type="submit">
+            Book the lesson!
+          </Button>
         )}
       </Form>
     </>
