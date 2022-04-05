@@ -1,14 +1,6 @@
 {
   "booking": [
     {
-      "name": "Pablo",
-      "phone": "555123456",
-      "topic": "Music Theory",
-      "datetime": "2022-04-24T07:00",
-      "guitar": false,
-      "id": 4
-    },
-    {
       "name": "John",
       "phone": "555512598",
       "topic": "Music Theory",
