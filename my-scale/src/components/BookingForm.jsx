@@ -29,7 +29,7 @@ const BookingForm = () => {
     if (id) {
       const FetchLesson = async () => {
         try {
-          const response = await fetch(`http://localhost:3000/booking/${id}`);
+          const response = await fetch(`https://json-server-demoday.herokuapp.com/booking/${id}`);
 
           if (response.ok) {
             const data = await response.json();
@@ -65,7 +65,7 @@ const BookingForm = () => {
     e.preventDefault();
 
     try {
-      let response = await fetch("http://localhost:3000/booking", {
+      let response = await fetch("`https://json-server-demoday.herokuapp.com/booking", {
         method: "POST",
         body: JSON.stringify(bookingData),
         headers: {
@@ -92,7 +92,7 @@ const BookingForm = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:3000/booking/${bookingId}`,
+        `https://json-server-demoday.herokuapp.com/booking/${bookingId}`,
         {
           method: "PUT",
           headers: {

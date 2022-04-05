@@ -1,0 +1,13 @@
+.cardId {
+  position: relative;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline block;
+}
+.cardId:hover {
+  text-overflow: clip;
+  white-space: normal;
+  word-break: break-all;
+}
