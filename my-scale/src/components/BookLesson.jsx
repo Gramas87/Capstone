@@ -8,10 +8,10 @@ const BookLesson = () => {
     <div className="book">
       <Container >
         <Row>
-          <Col xs={12} md={4}>
+          <Col xs={12} s={12}  md={4}>
             <BookingForm />
           </Col>
-          <Col className="d-flex flex-wrap" xs={12} md={8}>
+          <Col className="d-flex flex-wrap" xs={12} s={12}  md={8}>
             <BookedLesson />
           </Col>
         </Row>
