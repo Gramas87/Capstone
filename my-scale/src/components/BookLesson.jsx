@@ -8,10 +8,10 @@ const BookLesson = () => {
     <>
       <Container>
         <Row>
-          <Col md={6}>
+          <Col xs={12} md={6}>
             <BookingForm />
           </Col>
-          <Col md={6}>
+          <Col xs={12} md={6}>
             <BookedLesson/>
           </Col>
         </Row>

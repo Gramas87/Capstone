@@ -1,6 +1,7 @@
 import { Card, Button } from "react-bootstrap";
-import {Link,useParams} from "react-router-dom"
+import {Link} from "react-router-dom"
 import { format, parseISO } from 'date-fns'
+import './SingleLesson.css'
 
 const convertDate = (dateString) => format(parseISO(dateString), 'yyyy-MMM-dd | HH:mm')
 const SingleLesson = ({ lesson }) => {
@@ -15,14 +16,14 @@ const SingleLesson = ({ lesson }) => {
         body: null
         
     })
-    alert("Lesson deleted!")
+    alert("Lesson cancelled!")
     setTimeout(() => {
         window.location.reload();
       }, 100);};
     
   return (
     <>
-      <Card style={{ width: "18rem" }}>
+      <Card className="card" style={{ width: "18rem" }}>
         <Card.Body>
           <Card.Title>{lesson.name}</Card.Title>
           <Card.Text>{lesson.datetime}</Card.Text>
@@ -35,10 +36,10 @@ const SingleLesson = ({ lesson }) => {
                 : <p>{lesson.name} will bring his own guitar</p> )
             }
           </Card.Text>
-         <Link to={`/book/${lesson.id}`}><Button variant="primary">reschedule this lesson</Button>{" "} </Link>
+         <Link to={`/book/${lesson.id}`}><Button id="confirmBtn" variant="primary">reschedule this lesson</Button>{" "} </Link>
           
             {" "}
-            <Button onClick={deletelesson} variant="primary">cancel your lesson</Button>{" "}
+            <Button id="cancelBtn" onClick={deletelesson} variant="primary">cancel your lesson</Button>{" "}
           
         </Card.Body>
       </Card>

@@ -1,11 +1,11 @@
-import { Navbar, Nav, Form, Image, Container } from "react-bootstrap";
-
+import { Navbar, Nav, Container } from "react-bootstrap";
+import './MyNavbar.css'
 const MyNavbar = () => (
   <>
-    <Navbar expand="lg" variant="light" bg="dark">
+    <Navbar className="nav" expand="lg" variant="light">
       <Container className="justify-content-center">
-        <Nav.Link href="/">Home</Nav.Link>
-        <Nav.Link href="/book">Book a lesson with me!</Nav.Link>
+        <Nav.Link className="linksNav" href="/">Home</Nav.Link>
+        <Nav.Link className="linksNav" href="/book">Book a lesson with me!</Nav.Link>
       </Container>
     </Navbar>
   </>

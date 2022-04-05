@@ -2,7 +2,8 @@ import Chord from "./Chord";
 
 const HarmonySection = ({ chords, harmony }) => {
   return (
-    <div>
+    <div className="contentDiv">
+      <h5 className="my-1 mx-2">List of chords and harmony explained</h5>
       <ol>
         {chords.map((chord, index) =>
           chord.includes("n") || chord.includes("5") ? (
@@ -16,8 +17,7 @@ const HarmonySection = ({ chords, harmony }) => {
           )
         )}
       </ol>
-
-      {harmony}
+      <div className="mt-1 mx-2">{harmony}</div>
     </div>
   );
 };

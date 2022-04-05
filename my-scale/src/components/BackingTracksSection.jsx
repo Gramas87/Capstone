@@ -1,5 +1,4 @@
 import Carousel from 'react-bootstrap/carousel'
-import './BackingTracksSection.css'
 
 import YouTube from 'react-youtube'
 import { useState, useEffect } from 'react'
@@ -7,12 +6,12 @@ import { useState, useEffect } from 'react'
 const BackingTracksSection = ({ ytlinksID }) => {
   const [players, setPlayers] = useState([])
 
-  useEffect(() => {
-    setPlayers([])
-  }, [ytlinksID])
+   useEffect(() => {
+     setPlayers([])
+   }, [ytlinksID])
 
   const opts = {
-    height: '300',
+    height: '340',
     width: '300',
   }
 
@@ -21,7 +20,7 @@ const BackingTracksSection = ({ ytlinksID }) => {
   }
 
   return (
-    <div>
+    <div className="contentDiv">
       <Carousel
         interval={null}
         onSlide={() => {

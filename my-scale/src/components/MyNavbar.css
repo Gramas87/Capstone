@@ -1,0 +1,12 @@
+.nav{
+    background-color: rgba(0, 0, 0, 0.945);
+    font-family: "Nunito", sans-serif;
+  font-family: "PT Sans", sans-serif;
+}
+.linksNav{
+    color: #00ff9e !important;
+   font-size: 22px !important
+}
+.linksNav:hover{
+    color: rgb(153, 255, 153) !important;
+}

@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 import { Form, Button } from "react-bootstrap";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
-// BookLesson viene renderizzato sia da /book sia da /book/:id
-// tu puoi capire se sei in create on in edit mode dalla presenza di :id
-//
+
 
 const BookingForm = () => {
   const [postMode, setPostMode] = useState(false);
