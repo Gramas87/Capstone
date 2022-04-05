@@ -1,0 +1,59 @@
+.book {
+    position: relative;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-family: "Nunito", sans-serif;
+    font-family: "PT Sans", sans-serif;
+    height: 100vh;
+  }
+  .book::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url("https://wallpaperaccess.com/full/1078877.jpg");
+    opacity: 0.2;
+    width: "100%";
+    background-size: cover;
+    background-position: top center;
+    background-repeat: "no-repeat";
+  }
+  Form {
+    width: 300px;
+  }
+  
+  .btn-book {
+    margin-top: 10px;
+    color: #ffffff;
+    border: 2px solid #00ff9e !important;
+    border-radius: 100px !important;
+    font-family: PT Sans;
+    background-color: transparent !important;
+    letter-spacing: 1px !important;
+    padding: 10px 35px !important;
+    font-weight: bold !important;
+  
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+  }
+  .btn-book:hover {
+      background-color:rgba(60, 206, 182, 0.425) !important;
+      border: 2px solid #008856 !important;
+    }
+    #deleteBtn:hover {
+      background-color:rgba(255, 7, 7, 0.932) !important;
+      border: 2px solid #008856 !important;
+    }
+  #card{
+      background-color: transparent ;
+      height: 22rem;
+      overflow: auto;
+      border: solid #00ff9e;
+      
+      border-width: 2px;
+      border-top-left-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+  }

@@ -133,6 +133,7 @@ const BookingForm = () => {
             id="name"
             value={bookingData.name}
             type="text"
+            
             required={true}
             placeholder="enter name"
             onChange={(e) => {
@@ -194,9 +195,9 @@ const BookingForm = () => {
         />
 
         {editMode ? (
-          <Button type="submit">Confirm your reschedule</Button>
+          <Button  className="btn-book" type="submit">Confirm your reschedule</Button>
         ) : (
-          <Button type="submit">Book the lesson!</Button>
+          <Button className="btn-book" type="submit">Book the lesson!</Button>
         )}
       </Form>
     </>

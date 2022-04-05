@@ -23,7 +23,7 @@ const SingleLesson = ({ lesson }) => {
     
   return (
     <>
-      <Card className="card" style={{ width: "18rem" }}>
+      <Card id="card" style={{ width: "18rem" }}>
         <Card.Body>
           <Card.Title>{lesson.name}</Card.Title>
           <Card.Text>{lesson.datetime}</Card.Text>
@@ -36,10 +36,10 @@ const SingleLesson = ({ lesson }) => {
                 : <p>{lesson.name} will bring his own guitar</p> )
             }
           </Card.Text>
-         <Link to={`/book/${lesson.id}`}><Button id="confirmBtn" variant="primary">reschedule this lesson</Button>{" "} </Link>
+         <Link to={`/book/${lesson.id}`}><Button className="btn-book" variant="primary">reschedule this lesson</Button>{" "} </Link>
           
             {" "}
-            <Button id="cancelBtn" onClick={deletelesson} variant="primary">cancel your lesson</Button>{" "}
+            <Button className="btn-book" id="deleteBtn" onClick={deletelesson} variant="primary">cancel this lesson</Button>{" "}
           
         </Card.Body>
       </Card>
