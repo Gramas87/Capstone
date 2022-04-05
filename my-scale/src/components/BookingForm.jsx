@@ -106,7 +106,7 @@ const BookingForm = () => {
         SetBookingData(bookingData);
         console.log(bookingData);
         setTimeout(() => {
-          window.location.assign("http://localhost:3001/book");
+          window.location.assign("/book");
         }, 100);
       } else {
         alert("something went wrong");
