@@ -6,12 +6,12 @@ import "./BookLesson.css";
 const BookLesson = () => {
   return (
     <div className="book">
-      <Container>
+      <Container >
         <Row>
           <Col xs={12} md={4}>
             <BookingForm />
           </Col>
-          <Col xs={12} md={8}>
+          <Col className="d-flex flex-wrap" xs={12} md={8}>
             <BookedLesson />
           </Col>
         </Row>

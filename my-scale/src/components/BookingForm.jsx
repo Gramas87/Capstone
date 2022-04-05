@@ -106,7 +106,7 @@ const BookingForm = () => {
         SetBookingData(bookingData);
         console.log(bookingData);
         setTimeout(() => {
-          window.location.reload();
+          window.location.assign("http://localhost:3001/book");
         }, 100);
       } else {
         alert("something went wrong");
@@ -123,7 +123,7 @@ const BookingForm = () => {
   return (
     <>
        {editMode ? (<h4>
-        Reschedule the lesson nr. {bookingId}
+        Reschedule lesson nr. {bookingId}
        </h4>) : <h4> Compile this form and book the lesson </h4> }
 
       <Form onSubmit={handleSubmit}>

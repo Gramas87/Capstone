@@ -25,7 +25,7 @@ const BookedLesson = () => {
   console.log(lessons);
 
   return (
-    <div className="d-flex flex-column align-items-center">
+    <>
       {lessons.length > 1 ? (
         lessons.map((lesson) => (
           <SingleLesson lesson={lesson} key={lesson.id} />
@@ -33,7 +33,7 @@ const BookedLesson = () => {
       ) : (
         <p>There are no booked lessons</p>
       )}
-    </div>
+      </>
   );
 };
 

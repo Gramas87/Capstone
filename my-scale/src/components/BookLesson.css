@@ -4,7 +4,7 @@
     color: rgb(255, 255, 255);
     font-family: "Nunito", sans-serif;
     font-family: "PT Sans", sans-serif;
-    height: 100vh;
+    min-height: 100% !important;
   }
   .book::before {
     content: "";
@@ -35,7 +35,7 @@
     letter-spacing: 1px !important;
     padding: 10px 35px !important;
     font-weight: bold !important;
-  
+    
     text-transform: uppercase !important;
     text-decoration: none !important;
   }
