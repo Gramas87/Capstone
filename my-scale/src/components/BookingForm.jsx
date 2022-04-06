@@ -66,7 +66,7 @@ const BookingForm = () => {
 
     try {
       let response = await fetch(
-        "`https://json-server-demoday.herokuapp.com/booking",
+        `https://json-server-demoday.herokuapp.com/booking/`,
         {
           method: "POST",
           body: JSON.stringify(bookingData),
@@ -107,6 +107,7 @@ const BookingForm = () => {
 
       if (response.ok) {
         SetBookingData(bookingData);
+        alert("Lesson rescheduled!");
         console.log(bookingData);
         setTimeout(() => {
           window.location.assign("/book");
