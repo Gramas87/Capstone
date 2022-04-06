@@ -1,7 +1,7 @@
 const InstructionSection = ({usage}) =>(
     <div className="contentDiv">
-         <h4 className="mt-1 mx-2">Tips to sound good!</h4>
-        <div className="mt-1 mx-2">{usage}</div>
+         <h4 className="my-2 mx-3">Tips to sound good!</h4>
+        <div className="my-2 mx-3">{usage}</div>
     </div>
  )
  
