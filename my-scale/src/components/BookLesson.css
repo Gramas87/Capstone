@@ -2,9 +2,10 @@
     position: relative;
     z-index: 1;
     color: rgb(255, 255, 255);
-    font-family: "Nunito", sans-serif;
-    font-family: "PT Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
     min-height: 100% !important;
+    
   }
   .book::before {
     content: "";
@@ -19,10 +20,16 @@
     width: "100%";
     background-size: cover;
     background-position: top center;
-    background-repeat: "no-repeat";
+    background-repeat: "no-repeat" !important;
   }
   Form {
     width: 300px;
+  }
+
+  @media screen and (max-width: 989px) and (min-width: 763px) {
+    Form {
+      width: 200px;
+    }
   }
   
   .btn-book {

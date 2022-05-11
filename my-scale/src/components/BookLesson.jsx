@@ -5,7 +5,7 @@ import "./BookLesson.css";
 
 const BookLesson = () => {
   return (
-    <div className="book vh-100">
+    <div className="book min-vh-100">
       <Container >
         <Row>
           <Col xs={12} s={12}  md={4}>

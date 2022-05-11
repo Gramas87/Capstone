@@ -2,10 +2,12 @@
   position: relative;
   z-index: 1;
   color: rgb(255, 255, 255);
-  font-family: "Nunito", sans-serif;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  
   height: 100vh;
   font-size: 18px;
+  min-height: 100% !important;
+  
 }
 .home::before {
   content: "";

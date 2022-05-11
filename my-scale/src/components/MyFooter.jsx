@@ -1,8 +1,9 @@
 import {Col, Row, Container} from "react-bootstrap"
-
+import "./MyFooter.css";
 const YoutubeLink = () =>(
   
-    <Container className="pt-5">
+    <Container className="footer">
+      
       <div className="d-flex justify-content-evenly">
        <div className="mb-2 text-white">
           Created by Giorgio Colliva
