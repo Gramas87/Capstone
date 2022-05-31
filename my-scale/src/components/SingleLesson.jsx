@@ -7,7 +7,7 @@ const convertDate = (dateString) =>
   format(parseISO(dateString), "yyyy-MMM-dd | HH:mm");
 const SingleLesson = ({ lesson }) => {
   const deletelesson = () => {
-    fetch(`https://json-server-demoday.herokuapp.com/booking/${lesson.id}`, {
+    fetch(`https://myscale-json-server.herokuapp.com/booking/${lesson.id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
