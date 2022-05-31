@@ -28,7 +28,7 @@ const BookingForm = () => {
       const FetchLesson = async () => {
         try {
           const response = await fetch(
-            `https://json-server-demoday.herokuapp.com/booking/${id}`
+            `https://myscale-json-server.herokuapp.com/booking/${id}`
           );
 
           if (response.ok) {
@@ -66,7 +66,7 @@ const BookingForm = () => {
 
     try {
       let response = await fetch(
-        `https://json-server-demoday.herokuapp.com/booking/`,
+        `https://myscale-json-server.herokuapp.com/booking`,
         {
           method: "POST",
           body: JSON.stringify(bookingData),
@@ -95,7 +95,7 @@ const BookingForm = () => {
 
     try {
       const response = await fetch(
-        `https://json-server-demoday.herokuapp.com/booking/${bookingId}`,
+        `https://myscale-json-server.herokuapp.com/booking/${bookingId}`,
         {
           method: "PUT",
           headers: {
