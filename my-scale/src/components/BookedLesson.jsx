@@ -10,7 +10,7 @@ const BookedLesson = () => {
 
   const FetchLessons = async () => {
     try {
-      const response = await fetch("https://myscale.herokuapp.com/booking");
+      const response = await fetch("https://myscale.herokuapp.com/");
 
       if (response.ok) {
         const data = await response.json();
